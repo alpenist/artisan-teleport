@@ -3,7 +3,7 @@
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/alpenist/artisan-teleporter.svg?style=flat-square)](https://packagist.org/packages/alpenist/artisan-teleporter)
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/alpenist/artisan-teleporter/run-tests?label=tests)](https://github.com/alpenist/artisan-teleporter/actions?query=workflow%3Arun-tests+branch%3Amaster)
 [![Total Downloads](https://img.shields.io/packagist/dt/alpenist/artisan-teleporter.svg?style=flat-square)](https://packagist.org/packages/alpenist/artisan-teleporter)
-
+![GitHub All Releases](https://img.shields.io/github/downloads/alpenist/artisan-teleport/total)
 
 Provides laravel artisan support for changing the default generator folder
 

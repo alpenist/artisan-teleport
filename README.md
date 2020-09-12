@@ -1,7 +1,5 @@
 # Artisan Teleport
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/alpenist/artisan-teleporter.svg?style=flat-square)](https://packagist.org/packages/alpenist/artisan-teleport)
-[![Total Downloads](https://img.shields.io/packagist/dt/alpenist/artisan-teleport.svg?style=flat-square)](https://packagist.org/packages/alpenist/artisan-teleport)
 ![GitHub All Releases](https://img.shields.io/github/downloads/alpenist/artisan-teleport/total)
 
 Provides laravel artisan support for changing the default generator folder

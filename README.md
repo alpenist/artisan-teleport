@@ -2,7 +2,7 @@
 
 ![Packagist Downloads](https://img.shields.io/packagist/dt/alpenist/artisan-teleport?color=green&label=Downloads&logo=Github&style=for-the-badge)
 
-Provides laravel artisan support for more controll on changing the default generated destination folder
+Provides Laravel Artisan support for more control on changing the default generated destination folder
 
 ## Who is it for
 The default laravel folder structure works perfectly fine for most cases but if you decided to take a different approach organizing your folder structure especially for larger than usual projects (**Hexagonal Architecture**) then this package is useful for you if you still want to use **`artisan`** to generate your stubs.

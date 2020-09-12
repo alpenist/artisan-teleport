@@ -54,8 +54,8 @@ return [
     */
 
     'defaults' => [
-        'assets' => '../../../folder/subfolder',
-        'base' => '../../../folder/subfolder/src',
+        'assets' => '../../../folder/sub-folder',
+        'base' => '../../../folder/sub-folder/src/Acme',
         'namespace' => 'Acme',
     ],
 
@@ -84,13 +84,17 @@ return [
     */
 
     'namespaces' => [
-        'ait' => [
-            'base_path' => '',
+        // The first key will override the defaults setting above
+        // Now the defaults will be set to: 
+        // namespace: AcmeCorp
+        // base_path: ../../../folder/sub-folder/src/AcmeCorp/Domain
+        'acme' => [
+            'base_path' => '../../../folder/sub-folder/src/AcmeCorp',
             'path' => 'Domain',
-            'namespace' => 'Acme',
+            'namespace' => 'AcmeCorp',
         ],
         'app' => [
-            'base_path' => '../../../folder/subfolder/src/App',
+            'base_path' => '../../../folder/sub-folder/src/App',
             'path' => '',
             'namespace' => 'App',
         ],

@@ -52,11 +52,6 @@ Assuming prefix is set to **`create`**
 php artisan create:model Client
 ```
 
-## Testing
-
-``` bash
-composer test
-```
 
 ## Changelog
 

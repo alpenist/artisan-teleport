@@ -107,27 +107,31 @@ class PolicyCreateCommand extends BaseGeneratorCommand
         $dummyModel = Str::camel($model) === 'user' ? 'model' : $model;
 
         $replace = [
-            'NamespacedDummyModel'  => $namespacedModel,
+            'NamespacedDummyModel' => $namespacedModel,
             '{{ namespacedModel }}' => $namespacedModel,
-            '{{namespacedModel}}'   => $namespacedModel,
-            'DummyModel'            => $model,
-            '{{ model }}'           => $model,
-            '{{model}}'             => $model,
-            'dummyModel'            => Str::camel($dummyModel),
-            '{{ modelVariable }}'   => Str::camel($dummyModel),
-            '{{modelVariable}}'     => Str::camel($dummyModel),
-            'DummyUser'             => $dummyUser,
-            '{{ user }}'            => $dummyUser,
-            '{{user}}'              => $dummyUser,
-            '$user'                 => '$' . Str::camel($dummyUser),
+            '{{namespacedModel}}' => $namespacedModel,
+            'DummyModel' => $model,
+            '{{ model }}' => $model,
+            '{{model}}' => $model,
+            'dummyModel' => Str::camel($dummyModel),
+            '{{ modelVariable }}' => Str::camel($dummyModel),
+            '{{modelVariable}}' => Str::camel($dummyModel),
+            'DummyUser' => $dummyUser,
+            '{{ user }}' => $dummyUser,
+            '{{user}}' => $dummyUser,
+            '$user' => '$' . Str::camel($dummyUser),
         ];
 
         $stub = str_replace(
-            array_keys($replace), array_values($replace), $stub
+            array_keys($replace),
+            array_values($replace),
+            $stub
         );
 
         return str_replace(
-            "use {$namespacedModel};\nuse {$namespacedModel};", "use {$namespacedModel};", $stub
+            "use {$namespacedModel};\nuse {$namespacedModel};",
+            "use {$namespacedModel};",
+            $stub
         );
     }
 

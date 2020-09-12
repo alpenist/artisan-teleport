@@ -9,16 +9,13 @@ class ArtisanTeleportServiceProvider extends ServiceProvider
     public function boot()
     {
         if ($this->app->runningInConsole()) {
-
             $this->publishes([
                 __DIR__ . '/../config/artisan-teleport.php' => config_path('artisan-teleport.php'),
             ], 'config');
 
 
             $this->registerArtisanCommands();
-
         }
-
     }
 
     public function register()
@@ -37,13 +34,11 @@ class ArtisanTeleportServiceProvider extends ServiceProvider
         $classes = [];
 
         foreach ($finder as $file) {
-
             $classes[] = $namespace . $file->getBasename('.php');
         }
 
         if (count($classes)) {
             $this->commands($classes);
         }
-
     }
 }

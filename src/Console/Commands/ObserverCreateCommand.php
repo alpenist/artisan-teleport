@@ -78,7 +78,9 @@ class ObserverCreateCommand extends BaseGeneratorCommand
         }
 
         $stub = str_replace(
-            "use {$namespacedModel};\nuse {$namespacedModel};", "use {$namespacedModel};", $stub
+            "use {$namespacedModel};\nuse {$namespacedModel};",
+            "use {$namespacedModel};",
+            $stub
         );
 
         $model = class_basename(trim($model, '\\'));

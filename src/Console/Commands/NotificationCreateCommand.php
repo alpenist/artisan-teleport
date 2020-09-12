@@ -51,7 +51,6 @@ class NotificationCreateCommand extends BaseGeneratorCommand
      */
     protected function writeMarkdownTemplate()
     {
-
         $path = $this->viewPath(
             str_replace('.', '/', $this->option('markdown')) . '.blade.php'
         );

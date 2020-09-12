@@ -3,9 +3,7 @@
 
 namespace Ait\ArtisanTeleport\Console;
 
-
 use Illuminate\Console\Command;
-
 
 class BaseCommand extends Command
 {
@@ -20,7 +18,5 @@ class BaseCommand extends Command
         parent::__construct();
 
         $this->addNamespaceArgument();
-
     }
-
 }

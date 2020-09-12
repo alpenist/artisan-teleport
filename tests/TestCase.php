@@ -2,8 +2,8 @@
 
 namespace Alpenist\ArtisanTeleport\Tests;
 
-use Orchestra\Testbench\TestCase as Orchestra;
 use Alpenist\ArtisanTeleport\ArtisanTeleportServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {

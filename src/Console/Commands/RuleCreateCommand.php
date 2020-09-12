@@ -34,7 +34,6 @@ class RuleCreateCommand extends BaseGeneratorCommand
      */
     protected function getStub()
     {
-
         return $this->getStubFolder() . '/rule.stub';
 
         /*        $relativePath = '/stubs/rule.stub';

@@ -60,7 +60,6 @@ class MigrateCreateCommand extends BaseMigrationCommand
      */
     public function __construct(Composer $composer, Filesystem $files)
     {
-
         $this->creator = new MigrationCreator($files, $customStubPath = null);//$creator;
 
         $this->composer = $composer;
@@ -119,7 +118,10 @@ class MigrateCreateCommand extends BaseMigrationCommand
     protected function writeMigration($name, $table, $create)
     {
         $file = $this->creator->create(
-            $name, $this->getMigrationPath(), $table, $create
+            $name,
+            $this->getMigrationPath(),
+            $table,
+            $create
         );
 
         if (! $this->option('fullpath')) {

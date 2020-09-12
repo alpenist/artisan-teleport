@@ -97,7 +97,9 @@ class ControllerCreateCommand extends BaseGeneratorCommand
 //        $replace["use {$controllerNamespace}\Controller;\n"] = '';
 
         return str_replace(
-            array_keys($replace), array_values($replace), parent::buildClass($name)
+            array_keys($replace),
+            array_values($replace),
+            parent::buildClass($name)
         );
     }
 

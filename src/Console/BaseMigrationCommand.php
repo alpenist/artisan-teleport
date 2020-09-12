@@ -2,11 +2,7 @@
 
 namespace Ait\ArtisanTeleport\Console;
 
-
 use Illuminate\Console\Command;
-use Illuminate\Database\Migrations\MigrationCreator;
-use Illuminate\Filesystem\Filesystem;
-use Illuminate\Support\Composer;
 
 class BaseMigrationCommand extends Command
 {
@@ -43,7 +39,8 @@ class BaseMigrationCommand extends Command
         }
 
         return array_merge(
-            $this->migrator->paths(), [$this->getMigrationPath()]
+            $this->migrator->paths(),
+            [$this->getMigrationPath()]
         );
     }
 

@@ -81,5 +81,4 @@ class TestCreateCommand extends BaseGeneratorCommand
     {
         return $this->defaultNamespace().'\\Tests';
     }
-
 }

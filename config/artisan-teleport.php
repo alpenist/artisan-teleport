@@ -30,9 +30,9 @@ return [
     */
 
     'defaults' => [
-        'assets' => '../../../alpenist/cloudbooks',
-        'base' => '../../../alpenist/cloudbooks/src',
-        'namespace' => 'Ait',
+        'assets' => '',
+        'base' => '',
+        'namespace' => 'App',
     ],
 
     /*
@@ -60,13 +60,8 @@ return [
     */
 
     'namespaces' => [
-        'ait' => [
-            'base_path' => '',
-            'path' => 'Domain',
-            'namespace' => 'Ait',
-        ],
         'app' => [
-            'base_path' => '../../../alpenist/cloudbooks/src/App',
+            'base_path' => 'src',
             'path' => '',
             'namespace' => 'App',
         ],

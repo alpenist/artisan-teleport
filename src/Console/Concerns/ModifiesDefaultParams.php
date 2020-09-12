@@ -56,6 +56,8 @@ trait ModifiesDefaultParams
 
         $namespace = $namespaces[strtolower($default)] ?? null;
 
+
+
         if (! $namespaces || ! $namespace) {
             return $default;
         }

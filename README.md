@@ -9,7 +9,7 @@ Provides laravel artisan support for changing the default generator folder
 Install the package via composer:
 
 ```bash
-composer require alpenist/artisan-teleporter
+composer require alpenist/artisan-teleport
 ```
 
 

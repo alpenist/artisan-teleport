@@ -26,19 +26,19 @@ return [
     'signature_prefix' => 'create',
 
     'defaults' => [
-        'assets' => '../../../alpenist/cloudbooks',
-        'base' => '../../../alpenist/cloudbooks/src',
-        'namespace' => 'Ait',
+        'assets' => '../../../folder/subfolder',
+        'base' => '../../../folder/subfolder/src',
+        'namespace' => 'Acme',
     ],
 
     'namespaces' => [
         'ait' => [
             'base_path' => '',
             'path' => 'Domain',
-            'namespace' => 'Ait',
+            'namespace' => 'Acme',
         ],
         'app' => [
-            'base_path' => '../../../alpenist/cloudbooks/src/App',
+            'base_path' => '../../../folder/subfolder/src/App',
             'path' => '',
             'namespace' => 'App',
         ],

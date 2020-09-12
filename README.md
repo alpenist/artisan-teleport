@@ -15,7 +15,7 @@ composer require alpenist/artisan-teleport
 
 Publish the config file with:
 ```bash
-php artisan vendor:publish --provider="Ait\ArtisanTeleporter\ArtisanTeleporterServiceProvider" --tag="config"
+php artisan vendor:publish --provider="Ait\ArtisanTeleport\ArtisanTeleportServiceProvider" --tag="config"
 ```
 
 Change the namespace of your package root in the published config file, also change the root path relative to base_path() if you need to:

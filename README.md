@@ -5,7 +5,7 @@
 Provides Laravel Artisan support for more control on changing the default generated destination folder
 
 ## Who is it for
-The default laravel folder structure works perfectly fine for most cases but if you decided to take a different approach organizing your folder structure especially for larger than usual projects for example  (**Hexagonal**, **Domain Driven** Architecture, ...) then this package is useful for you if you still want to use **`artisan`** to generate your stubs.
+The default laravel folder structure works perfectly fine for most cases but if you decided to take a different approach organizing your folder structure especially for larger than usual projects for example  (**Hexagonal**, **Domain Driven** Architecture, etc....) then this package is useful for you if you still want to use **`artisan`** to generate your stubs.
 
 You can alternate with the default make command and generate stubs easily in scenarios like this
 ```

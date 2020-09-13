@@ -7,7 +7,7 @@ Provides Laravel Artisan support for more control on changing the default genera
 ## Who is it for
 The default laravel folder structure works perfectly fine for most cases but if you decided to take a different approach organizing your folder structure especially for larger than usual projects (**Hexagonal Architecture**) then this package is useful for you if you still want to use **`artisan`** to generate your stubs.
 
-You can generate stubs easily in scenarios like this
+You can alternate with the default make command and generate stubs easily in scenarios like this
 ```
  |-- laravel
     |-- app 

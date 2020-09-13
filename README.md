@@ -19,7 +19,7 @@ You can generate stubs easily in scenarios like this
           |-- Console
           |-- Exceptions
           |-- Providers
-       ...
+          ...
        |-- Acme
           |-- Clients
              |-- Models
@@ -29,6 +29,7 @@ You can generate stubs easily in scenarios like this
             |-- Events
             |-- Observers
             ...
+         ...   
        ...   
     |-- vendor
     |-- .env    

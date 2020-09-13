@@ -5,7 +5,7 @@
 Provides Laravel Artisan support for more control on changing the default generated destination folder
 
 ## Who is it for
-The default laravel folder structure works perfectly fine for most cases but if you decided to take a different approach organizing your folder structure especially for larger than usual projects (**Hexagonal Architecture**) then this package is useful for you if you still want to use **`artisan`** to generate your stubs.
+The default laravel folder structure works perfectly fine for most cases but if you decided to take a different approach organizing your folder structure especially for larger than usual projects for example  (**Hexagonal**, **Domain Driven** Architecture, ...) then this package is useful for you if you still want to use **`artisan`** to generate your stubs.
 
 You can alternate with the default make command and generate stubs easily in scenarios like this
 ```
@@ -155,11 +155,15 @@ return [
 ```
 
 ## Usage
-Assuming prefix is set to **`create`**
+Assuming **`signature_prefix`** is set to **`create`** and the default namespace set to **`App`** and the base path is set to **`project/src/App`** the following line will create a model with the namespace **`App\Clients\Models`** in **`project/src/App/Clients/Models`** folder
 ``` bash
-php artisan create:model Client
+php artisan create:model Clients/Client
 ```
+If you have defined an additional namespace **`Acme`** in the config which has base set to **`project/src/Acme`**  you may provide the namespace as a second argument and it will create a model with the namespace **`Acme\Employees\Models`** in **`project/src/Acme/Employees/Models`** folder
 
+``` bash
+php artisan create:model Employee Acme
+```
 
 ## Changelog
 

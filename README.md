@@ -7,6 +7,57 @@ Provides Laravel Artisan support for more control on changing the default genera
 ## Who is it for
 The default laravel folder structure works perfectly fine for most cases but if you decided to take a different approach organizing your folder structure especially for larger than usual projects (**Hexagonal Architecture**) then this package is useful for you if you still want to use **`artisan`** to generate your stubs.
 
+You can generate stubs easily in scenarios like this
+```
+ |-- laravel
+    |-- app 
+    |-- bootstrap
+    |-- bootstrap
+    ...   
+    |-- src
+       |-- App
+          |-- Console
+          |-- Exceptions
+          |-- Providers
+       ...
+       |-- Acme
+          |-- Clients
+          |-- Models
+          ...
+       |-- Invoices
+          |-- Models
+          |-- Events
+          |-- Observers
+          ...
+    ...   
+    |-- vendor
+    |-- .env    
+    |-- server.php  
+```
+or even
+```
+ |-- laravel              |-- Project
+    |-- app                  |-- config
+    |-- bootstrap            |-- database
+    ...                      |-- resources
+    |-- vendor               |-- src
+    |-- .env                    |-- App
+    |-- server.php                 |-- Console
+                                   |-- Exceptions
+                                   |-- Providers
+                                   ...
+                                |-- Acme
+                                   |-- Clients
+                                      |-- Models
+                                      ...
+                                   |-- Invoices
+                                      |-- Models
+                                      |-- Events
+                                      |-- Observers
+                                      ...
+                             |-- tests
+```
+
 ## Installation
 
 Install the package via composer:

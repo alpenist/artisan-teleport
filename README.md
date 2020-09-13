@@ -12,7 +12,6 @@ You can generate stubs easily in scenarios like this
  |-- laravel
     |-- app 
     |-- bootstrap
-    |-- bootstrap
     ...   
     |-- src
        |-- App

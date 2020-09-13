@@ -10,7 +10,6 @@ The default laravel folder structure works perfectly fine for most cases but if 
 You can alternate with the default make command and generate stubs easily in scenarios like this
 ```
  |-- laravel
-    |-- app 
     |-- bootstrap
     ...   
     |-- src
@@ -38,24 +37,24 @@ You can alternate with the default make command and generate stubs easily in sce
 or even
 ```
  |-- laravel              |-- Project
-    |-- app                  |-- config
-    |-- bootstrap            |-- database
-    ...                      |-- resources
-    |-- vendor               |-- src
-    |-- .env                    |-- App
-    |-- server.php                 |-- Console
-                                   |-- Exceptions
-                                   |-- Providers
+    |-- bootstrap            |-- config
+    ...                      |-- database
+    |-- vendor               |-- resources
+    |-- .env                 |-- src
+    |-- server.php              |-- App
+                                |-- Console
+                                |-- Exceptions
+                                |-- Providers
+                                ...
+                             |-- Acme
+                                |-- Clients
+                                   |-- Models
+                                      ...
+                                |-- Invoices
+                                   |-- Models
+                                   |-- Events
+                                   |-- Observers
                                    ...
-                                |-- Acme
-                                   |-- Clients
-                                      |-- Models
-                                      ...
-                                   |-- Invoices
-                                      |-- Models
-                                      |-- Events
-                                      |-- Observers
-                                      ...
                              |-- tests
 ```
 

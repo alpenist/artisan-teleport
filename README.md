@@ -34,7 +34,7 @@ You can alternate with the default make command and generate stubs easily in sce
     |-- .env    
     |-- server.php  
 ```
-or even
+or even hook to the composer in laravel folder from a completely different project outside the main laravel application if you want
 ```
  |-- laravel              |-- Project
     |-- bootstrap            |-- config

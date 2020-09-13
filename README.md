@@ -162,7 +162,7 @@ php artisan create:model Clients/Client
 If you have defined an additional namespace **`Acme`** in the config which has base set to **`project/src/Acme`**  you may provide the namespace as a second argument and it will create a model with the namespace **`Acme\Employees\Models`** in **`project/src/Acme/Employees/Models`** folder
 
 ``` bash
-php artisan create:model Employee Acme
+php artisan create:model Employees/Employee Acme
 ```
 
 ## Changelog

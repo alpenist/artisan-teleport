@@ -74,7 +74,7 @@ Publish the config file with:
 php artisan vendor:publish --provider="Ait\ArtisanTeleport\ArtisanTeleportServiceProvider" --tag="config"
 ```
 
-Change the namespace of your package root in the published config file, also change the root path relative to base_path() if you need to:
+Change the namespace of your package root in the published artisan-teleport.php config file, also change the root path relative to base_path() if you need to:
 
 ```php
 return [

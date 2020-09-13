@@ -42,19 +42,21 @@ or even
     |-- vendor               |-- resources
     |-- .env                 |-- src
     |-- server.php              |-- App
-                                |-- Console
-                                |-- Exceptions
-                                |-- Providers
-                                ...
-                             |-- Acme
-                                |-- Clients
-                                   |-- Models
-                                      ...
-                                |-- Invoices
-                                   |-- Models
-                                   |-- Events
-                                   |-- Observers
+                                   |-- Console
+                                   |-- Exceptions
+                                   |-- Providers
                                    ...
+                                |-- Acme
+                                   |-- Clients
+                                      |-- Models
+                                      ...
+                                   |-- Invoices
+                                      |-- Models
+                                      |-- Events
+                                      |-- Observers
+                                      ...
+                                   ...
+                                ...
                              |-- tests
 ```
 

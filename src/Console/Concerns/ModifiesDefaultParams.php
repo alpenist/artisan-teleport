@@ -69,9 +69,12 @@ trait ModifiesDefaultParams
 
         $namespaces = $this->keysToCase('strtolower', config('artisan-teleport.namespaces'));
 
-        if (! $namespaces || ! $namespaces[strtolower($this->configRootNamespace())]) {
+        $namespace = $namespaces[strtolower($this->configRootNamespace())] ?? null;
+
+        if (! $namespaces || ! $namespace) {
             return $default;
         }
+
 
         return $namespaces[strtolower($default)]['base_path'] ?? $default;
     }

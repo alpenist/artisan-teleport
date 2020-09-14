@@ -45,7 +45,13 @@ abstract class BaseGeneratorCommand extends GeneratorCommand
      */
     protected function rootNamespace()
     {
-        return $this->configRootNamespace() ?? $this->laravel->getNamespace();
+        $configNamespace = $this->configRootNamespace();
+
+        if ($configNamespace) {
+            $configNamespace = Str::replaceLast('\\', '', $configNamespace) . '\\';
+        }
+
+        return $configNamespace ?? $this->laravel->getNamespace();
     }
 
     /**
@@ -63,7 +69,7 @@ abstract class BaseGeneratorCommand extends GeneratorCommand
     /**
      * Qualify the given model class base name.
      *
-     * @param  string  $model
+     * @param string $model
      * @return string
      */
     protected function qualifyModel(string $model)
@@ -72,13 +78,13 @@ abstract class BaseGeneratorCommand extends GeneratorCommand
 
         $model = str_replace('/', '\\', $model);
 
-        $rootNamespace = $this->rootNamespace().'\\';
+        $rootNamespace = $this->rootNamespace() . '\\';
 
         if (Str::startsWith($model, $rootNamespace)) {
             return $model;
         }
 
-        return $rootNamespace.'Models\\'.$model;
+        return $rootNamespace . 'Models\\' . $model;
 
 //        return is_dir(app_path('Models'))
 //            ? $rootNamespace.'Models\\'.$model
@@ -88,7 +94,7 @@ abstract class BaseGeneratorCommand extends GeneratorCommand
     /**
      * Build the class with the given name.
      *
-     * @param  string  $name
+     * @param string $name
      * @return string
      *
      * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
@@ -103,8 +109,8 @@ abstract class BaseGeneratorCommand extends GeneratorCommand
     /**
      * Replace the namespace for the given stub.
      *
-     * @param  string  $stub
-     * @param  string  $name
+     * @param string $stub
+     * @param string $name
      * @return $this
      */
     protected function replaceNamespace(&$stub, $name)
@@ -115,7 +121,7 @@ abstract class BaseGeneratorCommand extends GeneratorCommand
             ['{{namespace}}', '{{rootNamespace}}', '{{namespacedUserModel}}'],
         ];
 
-        $namespace = trim($this->rootNamespace(), '\\')."\\";
+        $namespace = trim($this->rootNamespace(), '\\') . "\\";
 
         foreach ($searches as $search) {
             $stub = str_replace(
